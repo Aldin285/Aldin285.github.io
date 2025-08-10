@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#">
     <link  href="style.css" media="all" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Home</title>
 </head>
 
@@ -16,14 +17,14 @@
         <ul>
             <li>Boukabou Alla-Eddine</li>
             <li>Etudiant en B3 chez Sup De Vinci</li>
-            <li>En recherche d'alternance</li>
+            <li class="alternance">En recherche d'alternance</li>
         </ul>
 
         <img src="../Imports/pics/SDV.png">
     </div>
 
     <div class="aboutMe" id="aboutMe">
-        <h1>A propos de Moi</h1>
+        <h1>À propos de Moi</h1>
         <p>Après avoir terminé ma deuxième année à Sup De Vinci, je suis actuellement à la recherche d’une alternance à partir de septembre afin de poursuivre ma formation en troisième année. <br><br>
 
             Lors de ma première année, j’ai acquis les bases du développement web avec des langages fondamentaux tels que HTML, CSS et JavaScript, ainsi que d’autres technologies essentielles.<br><br>
@@ -66,9 +67,39 @@
 
         <div class="projects">
 
-            <div class="projectElem">
+            
+            <!-- ---------------------- -->
+             <div class="projectElem">
+                <img src="../Imports/pics/chat.png">
 
-                <!-- ---------------------- -->
+                <div class="projectTitle chat">
+                    <h1>Plateforme Chat en temps réel <br>(En Cours)</h1>
+                </div>
+            
+                <div class="projectText">
+                    <p>Communication en temps réel entre utilisateurs via Next.js et Socket.io, avec gestion des données côté serveur en Node.js and MongoDB.</p>
+                    <a href="https://github.com/Aldin285/Plateforme_Discord-"> Voir sur github</a>
+                </div>
+            </div>
+
+            
+            <!-- ---------------------- -->
+            <div class="projectElem">
+                <img  src="../Imports/pics/biblio.jpg">
+
+                <div class="projectTitle">
+                        <h1>Bibliothèque</h1>
+                </div>
+            
+                <div class="projectText">
+                    <p>Gestion des livres (ajout, suppression, modification) avec le framework Razor Pages en C#.</p>
+                    <a href="https://github.com/Aldin285/Bibliotheque"> Voir sur github</a>
+                </div>
+            </div>  
+
+
+              <!-- ---------------------- -->
+            <div class="projectElem">
                 <img src="../Imports/pics/car.jpg">
 
                 <div class="projectTitle car">
@@ -76,23 +107,9 @@
                 </div>
             
                 <div class="projectText car">
-                    <p>description du projet</p>
-                    <a href="#"> Voir sur github</a>
+                    <p>Gestion des bases de données clients et véhicules avec PostgreSQL et PHP.</p>
+                    <a href="https://github.com/Aldin285/Loc-Auto"> Voir sur github</a>
                     
-                </div>
-            </div>
-
-            <!-- ---------------------- -->
-             <div class="projectElem">
-                <img src="../Imports/pics/chat.png">
-
-                <div class="projectTitle">
-                    <h1>Plateforme Discord (En Cours)</h1>
-                </div>
-            
-                <div class="projectText">
-                    <p>description du projet</p>
-                    <a href="#"> Voir sur github</a>
                 </div>
             </div>
 
@@ -105,24 +122,11 @@
                 </div>
             
                 <div class="projectText valorant">
-                    <p>description du projet</p>
-                    <a href="#"> Voir sur github</a>
+                    <p>Extraction et affichage de données automatiquement depuis une API à l'aide de JavaScript.</p>
+                    <a href="https://github.com/LSDV-2023/Site-API-valorant"> Voir sur github</a>
                 </div>
             </div>
-            <!-- ---------------------- -->
-
-            <div class="projectElem">
-                <img  src="../Imports/pics/biblio.jpg">
-
-                <div class="projectTitle">
-                        <h1>Bibliothèque</h1>
-                </div>
             
-                <div class="projectText">
-                    <p>description du projet</p>
-                    <a href="#"> Voir sur github</a>
-                </div>
-            </div>  
         </div>
     </div>
 
