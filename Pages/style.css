@@ -335,6 +335,7 @@ input[type="radio"] {
 
 .skill {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
    
     padding-bottom: 10px;
