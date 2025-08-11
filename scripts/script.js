@@ -17,11 +17,12 @@ fetch('footer.html')
 function Open() {
     document.getElementById("menuContent").classList.remove("hide");
     document.getElementById("menuContent").classList.add("show");
+    document.getElementById("menu-overlay").classList.add("active");
 }
 
 function Close() {
         document.getElementById("menuContent").classList.remove("show");
-    
+        document.getElementById("menu-overlay").classList.remove("active");
     
         document.getElementById("menuContent").classList.add("hide");
 
