@@ -601,6 +601,13 @@ input[type="radio"] {
         font-size: 3.5vw;
     }
 
+    .projectText{
+        font-size: 4vw;
+    }
+
+    .projectText a{
+        font-size: 4vw;
+    }
 }
 
 /* ------------Footer-------------- */
