@@ -365,6 +365,7 @@ li, a{
 
 }
 
+
  .mainTitle{
     text-align: center;
     text-transform: uppercase;
@@ -437,6 +438,15 @@ input[type="radio"] {
 #software:checked ~ .info #software-info,
 #softSkills:checked ~ .info #softSkills-info {
     display: block;
+}
+
+@media (max-width: 600px){
+    .aboutMe{
+        padding: 20px 20px;
+    }
+    .mainTitle{
+       padding: 0;
+    }
 }
 
 /* ---------------Mes Realisations--------------- */
