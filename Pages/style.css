@@ -377,7 +377,7 @@ li, a{
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 5s infinite linear;
+    animation: shine 3s infinite linear;
     padding: 20px;
 }
 
@@ -386,10 +386,10 @@ li, a{
         background-position:  0;
     }
     60% {
-        background-position: 600px;
+        background-position: 700px;
     }
     100% {
-        background-position: 600px;
+        background-position: 800px;
     }
 }
 
