@@ -31,4 +31,19 @@ function Close() {
 
 }
 
-// Contact
+// Vanta.js
+document.addEventListener("DOMContentLoaded", function () {
+  VANTA.NET({
+    el: ".vanta-section",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x2ebd9b,         // Line color
+    backgroundColor: 0x061d1a, // Background color
+    points: 12.00
+  });
+});

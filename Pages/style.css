@@ -3,8 +3,8 @@
 
 
 html{
-    /* background: url(../Imports/pics/city.jpg) no-repeat center center fixed;  */
-    background: linear-gradient(to bottom, rgb(25, 118, 104), rgb(66, 206, 171), rgb(43, 217, 237));
+    /* background: url(../Imports/pics/city.jpeg) no-repeat center center fixed;  */
+    /* background: linear-gradient(to bottom, rgb(25, 118, 104), rgb(66, 206, 171), rgb(43, 217, 237)); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,16 +32,25 @@ html{
     all: unset;
 }
 
+.vanta-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none; 
+}
+
 /* -----------------Header----------------- */
 
 header{
-    /* border-color: rgb(25, 156, 82); */
-    background-color: rgba(19, 97, 75, 0.519); 
+    background-color: rgba(4, 31, 23, 0.799);
+    border: 0.5px solid rgba(213, 245, 236, 0.396); 
     align-items: center;
     padding: 3px 5%;
-    border-radius: 20px;
-
-     z-index: 9999;
+    border-radius: 100px;
+    z-index: 9999;
  }
 
 header button{
@@ -101,8 +110,8 @@ header button{
     background-color: rgba(255, 255, 255, 0.825);
     padding: 10px 10px;
     border-radius: 20px;
-    
-    
+
+    text-shadow: none;
 }
 
 
@@ -134,7 +143,7 @@ li, a{
         padding: 0 0;
 
         /* Couleurs */
-        background-color: rgba(81, 227, 186, 0.626);
+        background-color: rgba(19, 97, 75, 0.519);
         /* border-left: 5px solid rgb(13, 101, 78); */
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
@@ -289,10 +298,20 @@ li, a{
     font-size: 30px;
     line-height: 2.5em;
     font-weight: bolder;
+    text-shadow: 
+        2px 2px 0 rgb(42, 198, 153),
+        2px 2px 0 rgb(28, 160, 125),
+        2px 2px 0 rgb(20, 104, 80);
 }
+
+
 
 .alternance{
     color: rgb(2, 231, 89);
+    text-shadow: 
+        2px 2px 0 rgb(30, 133, 104),
+        2px 2px 0 rgb(28, 160, 125),
+        2px 2px 0 rgb(16, 79, 61);
 }
 
 .introduction img{
@@ -321,12 +340,37 @@ li, a{
 .aboutMe{
     padding: 20px 50px;
     border-radius: 20px;
-    background-color: rgba(19, 97, 75, 0.519);
+    background-color: rgba(13, 72, 56, 0.31);
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(10px);
 
 }
 
-.aboutMe h1{
+ .mainTitle{
     text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right,
+     rgb(42, 198, 153) 0,
+     rgb(16, 94, 71) 10%,
+     rgb(42, 198, 153) 20%
+     );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+    padding: 20px;
+}
+
+@keyframes shine {
+    0% {
+        background-position:  0;
+    }
+    60% {
+        background-position: 600px;
+    }
+    100% {
+        background-position: 600px;
+    }
 }
 
 input[type="radio"] {
@@ -379,14 +423,13 @@ input[type="radio"] {
 /* ---------------Mes Realisations--------------- */
 
 .realisation {
-    background-color: rgba(13, 72, 56, 0.519);
+    background-color: rgba(13, 72, 56, 0.31);
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 5px 15px;
 }
 
-.realisation h1{
-    text-align: center;
-}
 
 .projects{
     z-index: 0;
@@ -481,7 +524,7 @@ input[type="radio"] {
 }
 
 .projectText.car{
-    top: 30%;
+    top: 35%;
 }
 
 /* Ajustement de la position du texte de Valorent */
@@ -578,16 +621,21 @@ input[type="radio"] {
 
 .nav-links li {
   margin-bottom: 8px;
+  text-shadow: 
+        2px 2px 0 rgb(22, 131, 100),
+        2px 2px 0 rgb(5, 40, 31),
+        2px 2px 0 rgb(20, 104, 80);
 }
 
 .nav-links a {
   color: #eee;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.5s ease;
 }
 
 .nav-links a:hover {
-  color: rgb(14, 236, 177);
+  color: rgb(8, 180, 134);
+  text-shadow: none;
 }
 
 .contact-form {
