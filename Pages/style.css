@@ -685,7 +685,9 @@ input[type="radio"] {
   margin: 0;
 }
 
-
+.tel{
+    font-size: 25px;
+}
 
 
 .nav-links li {
