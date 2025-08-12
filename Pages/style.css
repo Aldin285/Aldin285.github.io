@@ -80,6 +80,7 @@ header button{
     object-fit: contain;
     width: 50px;
     height: 50px;
+    border-radius: 10px;
 }
 
 #activeDog{
@@ -217,14 +218,14 @@ li, a{
 
     /* Dog */
     .dog{
-        align-self:flex-end;
+        align-self:center;
         padding-top: 20px;
         order: 3;
     }
 
     .dog img{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     #activeDog{
@@ -333,9 +334,15 @@ li, a{
         2px 2px 0 rgb(16, 79, 61);
 }
 
+.introduction a{
+    display: inline-block;
+    border-radius: 1000px;
+}
+
 .introduction img{
-    width: 15%;
-    height: 15%;   
+    display: block;
+    width: 70%;
+    height: 70%;   
 }
 
 @media (max-width: 1300px){
@@ -348,11 +355,18 @@ li, a{
 }
 
 @media (max-width: 800px){
-    .introduction img{
-    width: 30%;
-    height: 30%;
-    
-}
+    .introduction {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .introduction img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        height: 50%;
+    }
+
 }
 
 /* ---------------A propos---------------- */
@@ -549,6 +563,10 @@ input[type="radio"] {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+.projectTitle.chat{
+        font-size: 1.7vw;
+    }
 
 .projectText a{
     font-size: 2vw;
