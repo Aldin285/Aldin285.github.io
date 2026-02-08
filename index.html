@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-ico" href="/assets/images/logoNB.ico">
-    <link  href="Pages/style.css" media="all" rel="stylesheet" type="text/css" >
+    <link  href="./Style/style.css" media="all" rel="stylesheet" type="text/css" >
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Alla-Eddine BOUKABOU</title>
 </head>
@@ -13,7 +13,7 @@
     <div class="vanta-section"></div>
     <div id="header-placeholder"></div>
 
-    <div class="introduction" id="home">
+    <section class="introduction" id="home">
 
         <ul>
             <li>Boukabou Alla-Eddine</li>
@@ -21,10 +21,10 @@
             <li class="alternance">En recherche d'alternance</li>
         </ul>
 
-                <a href="https://www.supdevinci.fr/"><img src="../assets/images/SDV.webp"></a>
-    </div>
+        <a href="https://www.supdevinci.fr/"><img src="../assets/images/SDV.webp"></a>
+    </section>
 
-    <div class="aboutMe" id="aboutMe">
+    <section class="aboutMe" id="aboutMe">
         <h1 class="mainTitle">À propos de Moi</h1>
         <p>Après avoir terminé ma deuxième année à Sup De Vinci, je suis actuellement à la recherche d’une alternance à partir de septembre afin de poursuivre ma formation en troisième année. <br><br>
 
@@ -61,82 +61,25 @@
             <div id="softSkills-info">Dynamisme / Autonomie / Méthode agile / Veille technologique / Trilingue ( Français, Anglais, Arabe)</div>
         </div>
 
-    </div>
+    </section>
 
     <br>
 
-    <div class="realisation" id="realisation">
+    <section class="realisation" id="realisation">
         <h1 class="mainTitle">Mes réalisations</h1>
 
-        <div class="projects">
+        <div class="projects" id="project-container">
 
-            
-            <!-- ---------------------- -->
-             <div class="projectElem">
-                <img src="/assets/images/chat.webp">
-
-                <div class="projectTitle chat">
-                    <h1>Plateforme Chat en temps réel <br>(En Cours)</h1>
-                </div>
-            
-                <div class="projectText">
-                    <p>Communication en temps réel entre utilisateurs via Next.js et Socket.io, avec gestion des données côté serveur en Node.js and MongoDB.</p>
-                    <a href="https://github.com/Aldin285/Plateforme_Discord-"> Voir sur github</a>
-                </div>
-            </div>
-
-            
-            <!-- ---------------------- -->
-            <div class="projectElem">
-                <img  src="/assets/images/biblio.webp">
-
-                <div class="projectTitle">
-                        <h1>Bibliothèque</h1>
-                </div>
-            
-                <div class="projectText">
-                    <p>Gestion des livres (ajout, suppression, modification) avec le framework Razor Pages en C#.</p>
-                    <a href="https://github.com/Aldin285/Bibliotheque"> Voir sur github</a>
-                </div>
-            </div>  
-
-
-              <!-- ---------------------- -->
-            <div class="projectElem">
-                <img src="/assets/images/car.webp">
-
-                <div class="projectTitle car">
-                    <h1>Loc'Auto</h1>
-                </div>
-            
-                <div class="projectText car">
-                    <p>Gestion des bases de données clients et véhicules avec PostgreSQL et PHP.</p>
-                    <a href="https://github.com/Aldin285/Loc-Auto"> Voir sur github</a>
-                    
-                </div>
-            </div>
-
-            <!-- ---------------------- -->
-            <div class="projectElem">
-                <img  src="/assets/images/valorant.webp">
-
-                 <div class="projectTitle valorant">
-                    <h1>Valorant</h1>
-                </div>
-            
-                <div class="projectText valorant">
-                    <p>Extraction et affichage de données automatiquement depuis une API à l'aide de JavaScript.</p>
-                    <a href="https://github.com/LSDV-2023/Site-API-valorant"> Voir sur github</a>
-                </div>
-            </div>
+            <!-- Projects are loaded from a script -->
             
         </div>
-    </div>
+    </section>
 
     <br>
 
     <div id="footer-placeholder"></div>
-<script src="/scripts/script.js"></script>
+<script src="./Scripts/script.js"></script>
+<script src="./Scripts/loadProjects.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 

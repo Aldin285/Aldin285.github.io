@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Plateforme Chat en temps réel",
+    "image": "./assets/images/chat.webp",
+    "description": "Communication en temps réel entre utilisateurs via Next.js et Socket.io, avec gestion des données côté serveur en Node.js and MongoDB.",
+    "githubLink": "https://github.com/Plateforme_Discord"
+  },
+  {
+    "title": "Bibliothèque",
+    "image": "./assets/images/biblio.webp",
+    "description": "Gestion des livres (ajout, suppression, modification) avec le framework Razor Pages en C#.",
+    "githubLink": "https://github.com/Bibliotheque"
+  },
+  {
+    "title": "Loc'Auto",
+    "image": "./assets/images/car.webp",
+    "description": "Gestion des bases de données clients et véhicules avec PostgreSQL et PHP.",
+    "githubLink": "https://github.com/Loc-Auto"
+  },
+  {
+    "title": "Valorant",
+    "image": "./assets/images/valorant.webp",
+    "description": "Extraction et affichage de données automatiquement depuis une API à l'aide de JavaScript.",
+    "githubLink": "https://github.com/LSDV-2023/Site-API-valorant"
+  }
+]
